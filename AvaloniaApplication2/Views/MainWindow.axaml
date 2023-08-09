@@ -1,0 +1,164 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:AvaloniaApplication2.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" Width="320" d:DesignWidth="320" d:DesignHeight="450"
+        x:Class="AvaloniaApplication2.Views.MainWindow"
+        x:DataType="vm:MainWindowViewModel"
+        Icon="/Assets/avalonia-logo.ico"
+        Title="AvaloniaApplication2">
+
+    <Design.DataContext>
+        <!-- This only sets the DataContext for the previewer in an IDE,
+             to set the actual DataContext for runtime, set the DataContext property in code (look at App.axaml.cs) -->
+        <vm:MainWindowViewModel/>
+    </Design.DataContext>
+
+    <Grid Name="Grid">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <!-- <ColumnDefinition Width="*"/> -->
+            <!-- <ColumnDefinition Width="*"/> -->
+            <!-- <ColumnDefinition Width="*"/> -->
+            <!-- <ColumnDefinition Width="*"/> -->
+            <!-- <ColumnDefinition Width="*"/> -->
+            <!-- <ColumnDefinition Width="*"/> -->
+            <!-- <ColumnDefinition Width="*"/> -->
+        </Grid.ColumnDefinitions>
+        <!-- <Button> -->
+        <!--     <Image Source="/Assets/Images/c9.png" /> -->
+        <!-- </Button> -->
+        
+        <Button Click="Button_OnClick" Name="Button1" Tag="0">
+            <Image Name="Button1Image" Source="/Assets/Images/c9.png" />
+        </Button>
+        
+        <Button Grid.Row="1" Click="Button_OnClick" Name="Button2" Tag="1">
+            <Image Name="Button2Image" Source="/Assets/Images/крести_10.png" />
+        </Button>
+
+        <Button Grid.Row="2" Click="Button_OnClick"  Name="Button3" Tag="2">
+            <Image Name="Button3Image" Source="/Assets/Images/крести_j.png" />
+        </Button>
+        
+        <Button Grid.Row="3" Click="Button_OnClick"  Name="Button4" Tag="3">
+            <Image Name="Button4Image" Source="/Assets/Images/крести_q.png" />
+        </Button>
+                
+        <Button Grid.Row="4" Click="Button_OnClick"  Name="Button5" Tag="4">
+            <Image Name="Button5Image" Source="/Assets/Images/крести_k.png" />
+        </Button>
+        
+        <Button Grid.Row="5" Click="Button_OnClick"  Name="Button6" Tag="5">
+            <Image Name="Button6Image" Source="/Assets/Images/крести_а.png" />
+        </Button>
+        
+        <Button Grid.Row="0" Grid.Column="1" Click="Button_OnClick"  Name="Button7" Tag="6">
+            <Image Name="Button7Image" Source="/Assets/Images/буби_9.png" />
+        </Button>
+        
+        <Button Grid.Row="1" Grid.Column="1" Click="Button_OnClick"  Name="Button8" Tag="7">
+            <Image Name="Button8Image" Source="/Assets/Images/буби_10.png" />
+        </Button>
+        
+        <Button Grid.Row="2" Grid.Column="1" Click="Button_OnClick"  Name="Button9" Tag="8">
+            <Image Name="Button9Image" Source="/Assets/Images/буби_j.png" />
+        </Button>
+        
+        <Button Grid.Row="3" Grid.Column="1" Click="Button_OnClick"  Name="Button10" Tag="9">
+            <Image Name="Button10Image" Source="/Assets/Images/буби_q.png" />
+        </Button>
+        
+        <Button Grid.Row="4" Grid.Column="1" Click="Button_OnClick"  Name="Button11" Tag="10">
+            <Image Name="Button11Image" Source="/Assets/Images/буби_k.png" />
+        </Button>
+        
+        <Button Grid.Row="5" Grid.Column="1" Click="Button_OnClick"  Name="Button12" Tag="11">
+            <Image Name="Button12Image" Source="/Assets/Images/буби_а.png" />
+        </Button>
+        
+        <Button Grid.Row="0" Grid.Column="2" Click="Button_OnClick"  Name="Button13" Tag="12">
+            <Image Name="Button13Image" Source="/Assets/Images/чирви_9.png" />
+        </Button>
+        
+        <Button Grid.Row="1" Grid.Column="2" Click="Button_OnClick"  Name="Button14" Tag="13">
+            <Image Name="Button14Image" Source="/Assets/Images/чирви_10.png" />
+        </Button>
+        
+        <Button Grid.Row="2" Grid.Column="2" Click="Button_OnClick"  Name="Button15" Tag="14">
+            <Image Name="Button15Image" Source="/Assets/Images/чирви_j.png" />
+        </Button>
+        
+        <Button Grid.Row="3" Grid.Column="2" Click="Button_OnClick"  Name="Button16" Tag="15">
+            <Image Name="Button16Image" Source="/Assets/Images/чирви_q.png" />
+        </Button>
+        
+        <Button Grid.Row="4" Grid.Column="2" Click="Button_OnClick"  Name="Button17" Tag="16">
+            <Image Name="Button17Image" Source="/Assets/Images/чирви_k.png" />
+        </Button>
+        
+        <Button Grid.Row="5" Grid.Column="2" Click="Button_OnClick"  Name="Button18" Tag="17">
+            <Image Name="Button18Image" Source="/Assets/Images/чирви_а.png" />
+        </Button>
+        
+        <Button Grid.Row="0" Grid.Column="3" Click="Button_OnClick"  Name="Button19" Tag="18">
+            <Image Name="Button19Image" Source="/Assets/Images/пики_9.png" />
+        </Button>
+        
+        <Button Grid.Row="1" Grid.Column="3" Click="Button_OnClick"  Name="Button20" Tag="19">
+            <Image Name="Button20Image" Source="/Assets/Images/пики_10.png" />
+        </Button>
+        
+        <Button Grid.Row="2" Grid.Column="3" Click="Button_OnClick"  Name="Button21" Tag="20">
+            <Image Name="Button21Image" Source="/Assets/Images/пики_j.png" />
+        </Button>
+        
+        <Button Grid.Row="3" Grid.Column="3" Click="Button_OnClick"  Name="Button22" Tag="21">
+            <Image Name="Button22Image" Source="/Assets/Images/пики_q.png" />
+        </Button>
+        
+        <Button Grid.Row="4" Grid.Column="3" Click="Button_OnClick"  Name="Button23" Tag="22">
+            <Image Name="Button23Image" Source="/Assets/Images/пики_k.png" />
+        </Button>
+        
+        <Button Grid.Row="5" Grid.Column="3" Click="Button_OnClick"  Name="Button24" Tag="23">
+            <Image Name="Button24Image" Source="/Assets/Images/пики_а.png" />
+        </Button>
+        
+        <!-- <StackPanel Grid.Row="6" Grid.ColumnSpan="4" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center"> -->
+        <!--     <Button FontFamily="Montserrat" FontWeight="Bold" Click="Button_OnClick2"> -->
+        <!--         <StackPanel Orientation="Horizontal"> -->
+        <!--             <TextBlock> -->
+        <!--                 Reload -->
+        <!--             </TextBlock> -->
+        <!--             <Image Width="18" Source="/Assets/Images/reload.png"/> -->
+        <!--         </StackPanel> -->
+        <!--     </Button> -->
+        <!-- </StackPanel> -->
+        
+        <StackPanel Grid.Row="6" Grid.ColumnSpan="4" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Button FontFamily="Montserrat" FontWeight="Bold" Name="ReloadButton">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock>
+                        Reload
+                    </TextBlock>
+                    <Image Width="18" Source="/Assets/Images/reload.png"/>
+                </StackPanel>
+            </Button>
+        </StackPanel>
+    </Grid>
+
+</Window>
