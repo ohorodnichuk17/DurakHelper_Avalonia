@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/PC10/RiderProjects/AvaloniaApplication2/AvaloniaApplication2/AvaloniaApplication2.csproj": {}
+    "/Users/PC10/RiderProjects/Durak Helper/AvaloniaApplication2/AvaloniaApplication2.csproj": {}
   },
   "projects": {
-    "/Users/PC10/RiderProjects/AvaloniaApplication2/AvaloniaApplication2/AvaloniaApplication2.csproj": {
+    "/Users/PC10/RiderProjects/Durak Helper/AvaloniaApplication2/AvaloniaApplication2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/PC10/RiderProjects/AvaloniaApplication2/AvaloniaApplication2/AvaloniaApplication2.csproj",
+        "projectUniqueName": "/Users/PC10/RiderProjects/Durak Helper/AvaloniaApplication2/AvaloniaApplication2.csproj",
         "projectName": "AvaloniaApplication2",
-        "projectPath": "/Users/PC10/RiderProjects/AvaloniaApplication2/AvaloniaApplication2/AvaloniaApplication2.csproj",
+        "projectPath": "/Users/PC10/RiderProjects/Durak Helper/AvaloniaApplication2/AvaloniaApplication2.csproj",
         "packagesPath": "/Users/PC10/.nuget/packages/",
-        "outputPath": "/Users/PC10/RiderProjects/AvaloniaApplication2/AvaloniaApplication2/obj/",
+        "outputPath": "/Users/PC10/RiderProjects/Durak Helper/AvaloniaApplication2/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/PC10/.nuget/NuGet/NuGet.Config"

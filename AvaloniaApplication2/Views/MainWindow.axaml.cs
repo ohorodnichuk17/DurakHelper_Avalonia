@@ -13,30 +13,30 @@ public partial class MainWindow : Window
     private List<Image> _images = new List<Image>();
     private readonly List<string> _initialImagePaths = new List<string> 
     {
-        "/Users/PC10/RiderProjects/AvaloniaApplication2/AvaloniaApplication2/Assets/Images/c9.png",  
-        "/Users/PC10/RiderProjects/AvaloniaApplication2/AvaloniaApplication2/Assets/Images/крести_10.png",
-        "/Users/PC10/RiderProjects/AvaloniaApplication2/AvaloniaApplication2/Assets/Images/крести_j.png",
-        "/Users/PC10/RiderProjects/AvaloniaApplication2/AvaloniaApplication2/Assets/Images/крести_q.png",
-        "/Users/PC10/RiderProjects/AvaloniaApplication2/AvaloniaApplication2/Assets/Images/крести_k.png",
-        "/Users/PC10/RiderProjects/AvaloniaApplication2/AvaloniaApplication2/Assets/Images/крести_а.png",
-        "/Users/PC10/RiderProjects/AvaloniaApplication2/AvaloniaApplication2/Assets/Images/буби_9.png",
-        "/Users/PC10/RiderProjects/AvaloniaApplication2/AvaloniaApplication2/Assets/Images/буби_10.png",
-        "/Users/PC10/RiderProjects/AvaloniaApplication2/AvaloniaApplication2/Assets/Images/буби_j.png",
-        "/Users/PC10/RiderProjects/AvaloniaApplication2/AvaloniaApplication2/Assets/Images/буби_q.png",
-        "/Users/PC10/RiderProjects/AvaloniaApplication2/AvaloniaApplication2/Assets/Images/буби_k.png",
-        "/Users/PC10/RiderProjects/AvaloniaApplication2/AvaloniaApplication2/Assets/Images/буби_а.png",
-        "/Users/PC10/RiderProjects/AvaloniaApplication2/AvaloniaApplication2/Assets/Images/пики_9.png",
-        "/Users/PC10/RiderProjects/AvaloniaApplication2/AvaloniaApplication2/Assets/Images/пики_10.png",
-        "/Users/PC10/RiderProjects/AvaloniaApplication2/AvaloniaApplication2/Assets/Images/пики_j.png",
-        "/Users/PC10/RiderProjects/AvaloniaApplication2/AvaloniaApplication2/Assets/Images/пики_q.png",
-        "/Users/PC10/RiderProjects/AvaloniaApplication2/AvaloniaApplication2/Assets/Images/пики_k.png",
-        "/Users/PC10/RiderProjects/AvaloniaApplication2/AvaloniaApplication2/Assets/Images/пики_а.png",
-        "/Users/PC10/RiderProjects/AvaloniaApplication2/AvaloniaApplication2/Assets/Images/чирви_9.png",
-        "/Users/PC10/RiderProjects/AvaloniaApplication2/AvaloniaApplication2/Assets/Images/чирви_10.png",
-        "/Users/PC10/RiderProjects/AvaloniaApplication2/AvaloniaApplication2/Assets/Images/чирви_j.png",
-        "/Users/PC10/RiderProjects/AvaloniaApplication2/AvaloniaApplication2/Assets/Images/чирви_q.png",
-            "/Users/PC10/RiderProjects/AvaloniaApplication2/AvaloniaApplication2/Assets/Images/чирви_k.png",
-        "/Users/PC10/RiderProjects/AvaloniaApplication2/AvaloniaApplication2/Assets/Images/черви_а.png"
+        "/Users/PC10/RiderProjects/Durak Helper/AvaloniaApplication2/Assets/Images/c9.png",
+        "/Users/PC10/RiderProjects/Durak Helper/AvaloniaApplication2/Assets/Images/крести_10.png",
+        "/Users/PC10/RiderProjects/Durak Helper/AvaloniaApplication2/Assets/Images/крести_j.png",
+        "/Users/PC10/RiderProjects/Durak Helper/AvaloniaApplication2/Assets/Images/крести_q.png",
+        "/Users/PC10/RiderProjects/Durak Helper/AvaloniaApplication2/Assets/Images/крести_k.png",
+        "/Users/PC10/RiderProjects/Durak Helper/AvaloniaApplication2/Assets/Images/крести_а.png",
+        "/Users/PC10/RiderProjects/Durak Helper/AvaloniaApplication2/Assets/Images/буби_9.png",
+        "/Users/PC10/RiderProjects/Durak Helper/AvaloniaApplication2/Assets/Images/буби_10.png",
+        "/Users/PC10/RiderProjects/Durak Helper/AvaloniaApplication2/Assets/Images/буби_j.png",
+        "/Users/PC10/RiderProjects/Durak Helper/AvaloniaApplication2/Assets/Images/буби_q.png",
+        "/Users/PC10/RiderProjects/Durak Helper/AvaloniaApplication2/Assets/Images/буби_k.png",
+        "/Users/PC10/RiderProjects/Durak Helper/AvaloniaApplication2/Assets/Images/буби_а.png",
+        "/Users/PC10/RiderProjects/Durak Helper/AvaloniaApplication2/Assets/Images/пики_9.png",
+        "/Users/PC10/RiderProjects/Durak Helper/AvaloniaApplication2/Assets/Images/пики_10.png",
+        "/Users/PC10/RiderProjects/Durak Helper/AvaloniaApplication2/Assets/Images/пики_j.png",
+        "/Users/PC10/RiderProjects/Durak Helper/AvaloniaApplication2/Assets/Images/пики_q.png",
+        "/Users/PC10/RiderProjects/Durak Helper/AvaloniaApplication2/Assets/Images/пики_k.png",
+        "/Users/PC10/RiderProjects/Durak Helper/AvaloniaApplication2/Assets/Images/пики_а.png",
+        "/Users/PC10/RiderProjects/Durak Helper/AvaloniaApplication2/Assets/Images/чирви_9.png",
+        "/Users/PC10/RiderProjects/Durak Helper/AvaloniaApplication2/Assets/Images/чирви_10.png",
+        "/Users/PC10/RiderProjects/Durak Helper/AvaloniaApplication2/Assets/Images/чирви_j.png",
+        "/Users/PC10/RiderProjects/Durak Helper/AvaloniaApplication2/Assets/Images/чирви_q.png",
+        "/Users/PC10/RiderProjects/Durak Helper/AvaloniaApplication2/Assets/Images/чирви_k.png",
+        "/Users/PC10/RiderProjects/Durak Helper/AvaloniaApplication2/Assets/Images/черви_а.png"
     };
 
     public MainWindow()
@@ -92,7 +92,7 @@ public partial class MainWindow : Window
         {
             if (index >= 0 && index < _images.Count)
             {
-                SetImageSource(_images[index], "/Users/PC10/RiderProjects/AvaloniaApplication2/AvaloniaApplication2/Assets/Images/cross.png");
+                SetImageSource(_images[index], "/Users/PC10/RiderProjects/Durak Helper/AvaloniaApplication2/Assets/Images/cross.png");
             }
         }
     }  

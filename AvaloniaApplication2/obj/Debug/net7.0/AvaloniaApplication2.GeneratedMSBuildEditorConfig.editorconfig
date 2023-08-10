@@ -13,10 +13,10 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = AvaloniaApplication2
-build_property.ProjectDir = /Users/PC10/RiderProjects/AvaloniaApplication2/AvaloniaApplication2/
+build_property.ProjectDir = /Users/PC10/RiderProjects/Durak Helper/AvaloniaApplication2/
 
-[/Users/PC10/RiderProjects/AvaloniaApplication2/AvaloniaApplication2/App.axaml]
+[/Users/PC10/RiderProjects/Durak Helper/AvaloniaApplication2/App.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[/Users/PC10/RiderProjects/AvaloniaApplication2/AvaloniaApplication2/Views/MainWindow.axaml]
+[/Users/PC10/RiderProjects/Durak Helper/AvaloniaApplication2/Views/MainWindow.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
