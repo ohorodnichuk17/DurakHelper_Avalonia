@@ -1,5 +1,6 @@
 # DurakHelper_Avalonia
-<img width="570" alt="Screenshot 2023-08-09 at 23 12 47" src="https://github.com/ohorodnichuk17/DurakHelper_Avalonia/assets/101930820/b3995e29-f2cb-47ed-86d6-6d135a9b6c18">
+<img width="703" alt="Screenshot 2023-08-10 at 03 56 20" src="https://github.com/ohorodnichuk17/DurakHelper_Avalonia/assets/101930820/edd23d69-a537-446f-9dab-908d7d82425e">
+
 
 The "Durak" Game Assistant is a program designed to provide assistance to players in the well-known card game "Durak". The program is implemented using the Avalonia UI Framework, which enables the creation of a graphical user interface.
 
