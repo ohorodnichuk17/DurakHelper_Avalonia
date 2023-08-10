@@ -30,17 +30,7 @@
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
-            <!-- <ColumnDefinition Width="*"/> -->
-            <!-- <ColumnDefinition Width="*"/> -->
-            <!-- <ColumnDefinition Width="*"/> -->
-            <!-- <ColumnDefinition Width="*"/> -->
-            <!-- <ColumnDefinition Width="*"/> -->
-            <!-- <ColumnDefinition Width="*"/> -->
-            <!-- <ColumnDefinition Width="*"/> -->
         </Grid.ColumnDefinitions>
-        <!-- <Button> -->
-        <!--     <Image Source="/Assets/Images/c9.png" /> -->
-        <!-- </Button> -->
         
         <Button Click="Button_OnClick" Name="Button1" Tag="0">
             <Image Name="Button1Image" Source="/Assets/Images/c9.png" />
@@ -138,17 +128,6 @@
             <Image Name="Button24Image" Source="/Assets/Images/пики_а.png" />
         </Button>
         
-        <!-- <StackPanel Grid.Row="6" Grid.ColumnSpan="4" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center"> -->
-        <!--     <Button FontFamily="Montserrat" FontWeight="Bold" Click="Button_OnClick2"> -->
-        <!--         <StackPanel Orientation="Horizontal"> -->
-        <!--             <TextBlock> -->
-        <!--                 Reload -->
-        <!--             </TextBlock> -->
-        <!--             <Image Width="18" Source="/Assets/Images/reload.png"/> -->
-        <!--         </StackPanel> -->
-        <!--     </Button> -->
-        <!-- </StackPanel> -->
-        
         <StackPanel Grid.Row="6" Grid.ColumnSpan="4" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
             <Button FontFamily="Montserrat" FontWeight="Bold" Name="ReloadButton">
                 <StackPanel Orientation="Horizontal">
@@ -159,6 +138,17 @@
                 </StackPanel>
             </Button>
         </StackPanel>
+        
+        <!-- <StackPanel Grid.Row="6" Grid.ColumnSpan="4" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10"> -->
+        <!--     <Button FontFamily="Montserrat" FontWeight="Bold" Name="ReloadButton"> -->
+        <!--         <StackPanel Orientation="Horizontal"> -->
+        <!--             <TextBlock> -->
+        <!--                 Reload -->
+        <!--             </TextBlock> -->
+        <!--             <Image Width="18" Source="/Assets/Images/reload.png"/> -->
+        <!--         </StackPanel> -->
+        <!--     </Button> -->
+        <!-- </StackPanel> -->
     </Grid>
 
 </Window>

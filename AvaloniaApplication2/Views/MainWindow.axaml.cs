@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using Avalonia.Controls;
@@ -10,10 +11,41 @@ namespace AvaloniaApplication2.Views;
 public partial class MainWindow : Window
 {
     private List<Image> _images = new List<Image>();
+    private readonly List<string> _initialImagePaths = new List<string> 
+    {
+        "/Users/PC10/RiderProjects/AvaloniaApplication2/AvaloniaApplication2/Assets/Images/c9.png",  
+        "/Users/PC10/RiderProjects/AvaloniaApplication2/AvaloniaApplication2/Assets/Images/крести_10.png",
+        "/Users/PC10/RiderProjects/AvaloniaApplication2/AvaloniaApplication2/Assets/Images/крести_j.png",
+        "/Users/PC10/RiderProjects/AvaloniaApplication2/AvaloniaApplication2/Assets/Images/крести_q.png",
+        "/Users/PC10/RiderProjects/AvaloniaApplication2/AvaloniaApplication2/Assets/Images/крести_k.png",
+        "/Users/PC10/RiderProjects/AvaloniaApplication2/AvaloniaApplication2/Assets/Images/крести_а.png",
+        "/Users/PC10/RiderProjects/AvaloniaApplication2/AvaloniaApplication2/Assets/Images/буби_9.png",
+        "/Users/PC10/RiderProjects/AvaloniaApplication2/AvaloniaApplication2/Assets/Images/буби_10.png",
+        "/Users/PC10/RiderProjects/AvaloniaApplication2/AvaloniaApplication2/Assets/Images/буби_j.png",
+        "/Users/PC10/RiderProjects/AvaloniaApplication2/AvaloniaApplication2/Assets/Images/буби_q.png",
+        "/Users/PC10/RiderProjects/AvaloniaApplication2/AvaloniaApplication2/Assets/Images/буби_k.png",
+        "/Users/PC10/RiderProjects/AvaloniaApplication2/AvaloniaApplication2/Assets/Images/буби_а.png",
+        "/Users/PC10/RiderProjects/AvaloniaApplication2/AvaloniaApplication2/Assets/Images/пики_9.png",
+        "/Users/PC10/RiderProjects/AvaloniaApplication2/AvaloniaApplication2/Assets/Images/пики_10.png",
+        "/Users/PC10/RiderProjects/AvaloniaApplication2/AvaloniaApplication2/Assets/Images/пики_j.png",
+        "/Users/PC10/RiderProjects/AvaloniaApplication2/AvaloniaApplication2/Assets/Images/пики_q.png",
+        "/Users/PC10/RiderProjects/AvaloniaApplication2/AvaloniaApplication2/Assets/Images/пики_k.png",
+        "/Users/PC10/RiderProjects/AvaloniaApplication2/AvaloniaApplication2/Assets/Images/пики_а.png",
+        "/Users/PC10/RiderProjects/AvaloniaApplication2/AvaloniaApplication2/Assets/Images/чирви_9.png",
+        "/Users/PC10/RiderProjects/AvaloniaApplication2/AvaloniaApplication2/Assets/Images/чирви_10.png",
+        "/Users/PC10/RiderProjects/AvaloniaApplication2/AvaloniaApplication2/Assets/Images/чирви_j.png",
+        "/Users/PC10/RiderProjects/AvaloniaApplication2/AvaloniaApplication2/Assets/Images/чирви_q.png",
+            "/Users/PC10/RiderProjects/AvaloniaApplication2/AvaloniaApplication2/Assets/Images/чирви_k.png",
+        "/Users/PC10/RiderProjects/AvaloniaApplication2/AvaloniaApplication2/Assets/Images/черви_а.png"
+    };
+
     public MainWindow()
     {
         InitializeComponent();
         InitializeImages();
+        
+        var reloadButton = this.FindControl<Button>("ReloadButton");
+        if (reloadButton != null) reloadButton.Click += ReloadButton_Click;
     }
     
     private void InitializeImages()
@@ -42,14 +74,16 @@ public partial class MainWindow : Window
         _images.Add(this.FindControl<Image>("Button22Image"));
         _images.Add(this.FindControl<Image>("Button23Image"));
         _images.Add(this.FindControl<Image>("Button24Image"));
+        
+        for (int i = 0; i < _images.Count; i++)
+        {
+            _initialImagePaths.Add(_images[i].Source.ToString());
+        }
     }
     
     private void InitializeComponent()
     {
         AvaloniaXamlLoader.Load(this);
-        // _button1Image = this.FindControl<Image>("Button1Image");
-        // _button2Image = this.FindControl<Image>("Button2Image");
-
     }
 
     private void Button_OnClick(object? sender, RoutedEventArgs e)
@@ -61,16 +95,30 @@ public partial class MainWindow : Window
                 SetImageSource(_images[index], "/Users/PC10/RiderProjects/AvaloniaApplication2/AvaloniaApplication2/Assets/Images/cross.png");
             }
         }
+    }  
+    
+    private void ReloadButton_Click(object sender, RoutedEventArgs e)
+    {
+        for (int i = 0; i < _images.Count; i++)
+        {
+            SetImageSource(_images[i], _initialImagePaths[i]);
+        }
     }
     
     private void SetImageSource(Image image, string imagePath)
     {
         if (image != null)
         {
-            image.Source = new Bitmap(imagePath);
+            try
+            {
+                Console.WriteLine($"Loading image: {imagePath}");
+                image.Source = new Bitmap(imagePath);
+                Console.WriteLine($"Image loaded successfully.");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error loading image: {ex.Message}");
+            }
         }
     }
-
-    
-    
 }
